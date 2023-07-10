@@ -3,9 +3,9 @@ from smtplib import SMTP
 from email.message import EmailMessage
 def sendmail(to,subject,body):
     server=smtplib.SMTP_SSL('smtp.gmail.com',465)
-    server.login('sakethharanathghantasala@gmail.com','hfuotzgaxnbimnjs')
+    server.login(YOUR EMAIL ID,YOUR APP PASSWORD)
     msg=EmailMessage()
-    msg['From']='sakethharanathghantasala@gmail.com'
+    msg['From']=YOUR EMAIL ID
     msg['Subject']=subject
     msg['To']=to
     msg.set_content(body)
